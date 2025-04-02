@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contato com o professor de programação">
+    <title>Entre em Contato - ProfCode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato - ProfCode</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="musica-para-estudar.html">Música para Estudar</a></li>
+            <li><a href="contato.html">Entre em Contato</a></li>
+            <li><a href="video-programacao.html">Vídeos sobre Programação</a></li>
+            <li><a href="disciplinas-ministradas.html">Disciplinas Ministradas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Fale Conosco</h2>
+            <form action="enviar-contato.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ProfCode - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
